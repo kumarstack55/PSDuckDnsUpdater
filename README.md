@@ -6,7 +6,7 @@
 
 ```powershell
 Set-Location .\repos
-git clone https://...
+git clone https://github.com/kumarstack55/PSDuckDnsUpdater.git
 
 # run as administrator
 New-EventLog -LogName "Application" -Source "DuckDnsUpdater"
