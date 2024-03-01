@@ -22,7 +22,7 @@ function Invoke-DuckDnsWebRequest {
     $body = $streamReader.ReadToEnd()
     $response.Close()
 
-    $body
+    return $body
 }
 
 function Update-DuckDnsDomain {
