@@ -30,6 +30,18 @@ $token = "SECRETxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 .\Invoke-DuckDnsUpdate -Domain $domain -Token $token
 ```
 
+### Update domain with IPv6 address
+
+```powershell
+Set-Location .\PSDuckDnsUpdater
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+$domain = "YOUR-DOMAIN"
+$token = "SECRETxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+.\Invoke-DuckDnsUpdate -Domain $domain -Token $token -Update IPv6
+```
+
 ## Register in the task scheduler
 
 ```powershell
